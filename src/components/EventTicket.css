@@ -1,0 +1,141 @@
+/* Figma EVENT CARD — 390×196 */
+.event-ticket {
+  position: relative;
+  width: 390px;
+  max-width: 100%;
+  height: 196px;
+  margin: 0 auto;
+}
+
+.event-ticket__panel {
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 390px;
+  height: 176px;
+  border-radius: 15px;
+  background: var(--blue);
+}
+
+.event-ticket__perforation {
+  position: absolute;
+  left: 295px;
+  top: 0;
+  width: 20px;
+  height: 196px;
+  object-fit: fill;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.event-ticket__brand {
+  position: absolute;
+  left: 10px;
+  top: 18px;
+  width: 62px;
+  height: 58px;
+  object-fit: contain;
+}
+
+.event-ticket__time {
+  position: absolute;
+  left: 12px;
+  top: 86px;
+  margin: 0;
+  width: 278px;
+  font-family: var(--font-body);
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: -0.22px;
+  color: var(--cyan);
+}
+
+.event-ticket__title {
+  position: absolute;
+  left: 12px;
+  bottom: 21px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  max-width: 195px;
+  font-size: 30px;
+  letter-spacing: -0.33px;
+  color: var(--pink);
+  text-transform: lowercase;
+  line-height: 1;
+}
+
+.event-ticket__like {
+  position: absolute;
+  left: 353px;
+  top: 24px;
+  width: 23px;
+  height: 21px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.event-ticket__heart-svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.event-ticket__like--active .event-ticket__heart-svg path {
+  fill: var(--pink);
+}
+
+/* Stub tagline — 60% textbox, left-aligned, -90deg */
+.event-ticket__tagline-wrap {
+  position: absolute;
+  left: 80.77%;
+  right: 2.31%;
+  top: 29.59%;
+  bottom: 8.67%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  overflow: visible;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.event-ticket__tagline-rotate {
+  flex: none;
+  width: 60%;
+  height: 60%;
+  margin-left: 60px;
+  transform: rotate(-90deg);
+  transform-origin: left bottom;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.event-ticket__tagline {
+  margin: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 0;
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -0.165px;
+  color: var(--ice);
+  text-align: left;
+}
+
+.event-ticket__tagline span {
+  display: block;
+  white-space: nowrap;
+}

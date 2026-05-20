@@ -1,0 +1,346 @@
+/* Figma coupon 44:345 — 400×220 */
+.discount-coupon {
+  position: relative;
+  width: 400px;
+  max-width: 100%;
+  height: 220px;
+  margin: 0 auto;
+}
+
+.discount-coupon + .discount-coupon {
+  margin-top: -48px;
+}
+
+.discount-coupon--compact {
+  height: 183px;
+}
+
+.discount-coupon__body {
+  position: relative;
+  width: 400px;
+  max-width: 100%;
+  height: 220px;
+  margin: 0 auto;
+}
+
+.discount-coupon--compact .discount-coupon__body {
+  height: 183px;
+}
+
+/* Pink ticket body */
+.discount-coupon__fill {
+  position: absolute;
+  left: 20px;
+  top: 37px;
+  width: 360px;
+  height: 146px;
+  background: var(--pink);
+}
+
+.discount-coupon--compact .discount-coupon__fill {
+  top: 31px;
+  height: 121px;
+}
+
+.discount-coupon--locked .discount-coupon__fill {
+  background: rgba(216, 237, 242, 0.7);
+}
+
+.discount-coupon--used .discount-coupon__fill {
+  background: var(--ice);
+}
+
+.discount-coupon__corner {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  pointer-events: none;
+}
+
+.discount-coupon__dot {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  pointer-events: none;
+}
+
+.discount-coupon__dot--left {
+  left: 13px;
+}
+
+.discount-coupon__dot--right {
+  left: 372px;
+}
+
+/* Inner border frame */
+.discount-coupon__frame {
+  position: absolute;
+  left: 47px;
+  top: 49px;
+  width: 305px;
+  height: 122px;
+  border: 3px solid var(--blue);
+  border-radius: 20px;
+  pointer-events: none;
+}
+
+.discount-coupon--compact .discount-coupon__frame {
+  top: 41px;
+  height: 101px;
+}
+
+.discount-coupon--locked .discount-coupon__frame {
+  border-color: rgba(43, 66, 154, 0.7);
+}
+
+/* Vertical DISCOUNT label */
+.discount-coupon__label {
+  position: absolute;
+  left: 50px;
+  top: 1px;
+  width: 21px;
+  height: 219px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.discount-coupon--compact .discount-coupon__label {
+  height: 182px;
+}
+
+.discount-coupon__label span {
+  display: block;
+  width: 219px;
+  transform: rotate(-90deg);
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  line-height: 15px;
+  text-align: center;
+  color: var(--navy);
+}
+
+.discount-coupon--compact .discount-coupon__label span {
+  width: 182px;
+}
+
+.discount-coupon--locked .discount-coupon__label span {
+  color: rgba(1, 43, 72, 0.7);
+}
+
+/* Perforation dividers — Figma x 76 / 319, 119px tall */
+.discount-coupon__divider {
+  position: absolute;
+  width: 119px;
+  height: 3px;
+  object-fit: fill;
+  pointer-events: none;
+}
+
+.discount-coupon__divider--left {
+  left: 76px;
+  top: 51px;
+  transform: rotate(90deg);
+  transform-origin: left top;
+}
+
+.discount-coupon__divider--right {
+  left: 319px;
+  top: 52px;
+  transform: rotate(90deg);
+  transform-origin: left top;
+}
+
+.discount-coupon--compact .discount-coupon__divider--left {
+  top: 42px;
+  width: 99px;
+}
+
+.discount-coupon--compact .discount-coupon__divider--right {
+  top: 43px;
+  width: 99px;
+}
+
+/* Offer — top line with navy stroke + shadow */
+.discount-coupon__offer {
+  position: absolute;
+  left: 192.5px;
+  top: 79px;
+  transform: translateX(-50%);
+  margin: 0;
+  width: 181px;
+  font-family: var(--font-body);
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 15px;
+  text-align: center;
+  color: #cb7aa8;
+  -webkit-text-stroke: 3.5px var(--blue);
+  paint-order: stroke fill;
+  text-shadow: 2px 3px 0 var(--blue);
+  pointer-events: none;
+}
+
+.discount-coupon--compact .discount-coupon__offer {
+  top: 66px;
+  font-size: 30px;
+}
+
+.discount-coupon--locked .discount-coupon__offer {
+  color: rgba(216, 237, 242, 0.7);
+  -webkit-text-stroke: 3.5px rgba(43, 66, 154, 0.7);
+}
+
+.discount-coupon--used .discount-coupon__offer {
+  color: var(--ice);
+  -webkit-text-stroke: 3.5px var(--blue);
+}
+
+/* Category pill — Figma left 100, top 111, 193×33 */
+.discount-coupon__pill {
+  position: absolute;
+  left: 100px;
+  top: 111px;
+  width: 193px;
+  height: 33px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background: var(--navy);
+  pointer-events: none;
+}
+
+.discount-coupon--compact .discount-coupon__pill {
+  top: 92px;
+  height: 28px;
+  width: 160px;
+  left: 120px;
+}
+
+.discount-coupon--locked .discount-coupon__pill {
+  background: rgba(1, 43, 72, 0.7);
+}
+
+.discount-coupon__category {
+  font-family: var(--font-display-sc, var(--font-display));
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 15px;
+  color: var(--pink);
+  text-transform: uppercase;
+}
+
+.discount-coupon--compact .discount-coupon__category {
+  font-size: 20px;
+}
+
+.discount-coupon--locked .discount-coupon__category {
+  color: rgba(216, 237, 242, 0.7);
+}
+
+.discount-coupon--used .discount-coupon__category {
+  color: var(--ice);
+}
+
+/* Info dot — Figma left 282, top 117 */
+.discount-coupon__info {
+  position: absolute;
+  left: 282px;
+  top: 117px;
+  width: 5px;
+  height: 5px;
+  pointer-events: none;
+}
+
+.discount-coupon--compact .discount-coupon__info {
+  top: 97px;
+  left: 255px;
+}
+
+/* Barcode — Figma left 324, top 56, 20×108 */
+.discount-coupon__barcode-wrap {
+  position: absolute;
+  left: 324px;
+  top: 56px;
+  width: 20px;
+  height: 108px;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.discount-coupon--compact .discount-coupon__barcode-wrap {
+  top: 47px;
+  height: 90px;
+}
+
+.discount-coupon__barcode-bg,
+.discount-coupon__barcode-data {
+  position: absolute;
+  left: -44px;
+  top: 44px;
+  width: 108px;
+  height: 20px;
+  max-width: none;
+  transform: rotate(-90deg);
+  transform-origin: center;
+}
+
+.discount-coupon--compact .discount-coupon__barcode-bg,
+.discount-coupon--compact .discount-coupon__barcode-data {
+  width: 90px;
+  height: 17px;
+  left: -35px;
+  top: 37px;
+}
+
+.discount-coupon__lock {
+  position: absolute;
+  left: 140px;
+  top: 51px;
+  width: 118px;
+  height: 118px;
+  pointer-events: none;
+}
+
+.discount-coupon--compact .discount-coupon__lock {
+  top: 43px;
+  width: 98px;
+  height: 98px;
+  left: 151px;
+}
+
+.discount-coupon__used {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.discount-coupon__used-band {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 364px;
+  height: 21px;
+  transform: translate(-50%, -50%) rotate(-24.33deg);
+  background: rgba(0, 43, 72, 0.5);
+}
+
+.discount-coupon__used-text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-24.33deg);
+  width: 364px;
+  font-family: var(--font-display-sc, var(--font-display));
+  font-size: 24px;
+  line-height: 15px;
+  text-align: center;
+  color: var(--blue);
+  white-space: nowrap;
+}

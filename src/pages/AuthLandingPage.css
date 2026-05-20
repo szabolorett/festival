@@ -1,0 +1,39 @@
+.auth-landing {
+  min-height: 100dvh;
+  max-width: var(--app-width);
+  margin: 0 auto;
+  background: var(--ice);
+  padding: 30px 26px 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.auth-landing__logo {
+  width: min(65vw, 234px);
+  margin-bottom: 80px;
+}
+
+.auth-landing__title {
+  margin: 0 0 8px;
+  font-size: 50px;
+  color: var(--navy-dark);
+  text-align: center;
+}
+
+.auth-landing__subtitle {
+  margin: 0 0 72px;
+  font-size: 25px;
+  color: var(--navy-dark);
+  text-align: center;
+}
+
+.auth-landing__btn {
+  margin-bottom: 0;
+}
+
+.auth-landing__or {
+  margin: 32px 0;
+  font-size: 25px;
+  color: var(--navy-dark);
+}

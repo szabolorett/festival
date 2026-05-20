@@ -1,0 +1,113 @@
+.events-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 125px;
+  padding: 20px;
+  background: var(--pink);
+  flex-shrink: 0;
+}
+
+.events-header__title {
+  margin: 0;
+  text-align: center;
+  font-size: 50px;
+  letter-spacing: -0.55px;
+  color: var(--blue);
+  text-transform: lowercase;
+  line-height: 1;
+}
+
+.events-filters {
+  display: flex;
+  align-items: center;
+  padding: 17px 20px 0 19px;
+  background: var(--ice);
+  flex-shrink: 0;
+}
+
+.events-filters__chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 28px;
+  padding: 0 12px;
+  border: none;
+  border-radius: 10px;
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: -0.176px;
+  line-height: 1;
+  white-space: nowrap;
+  text-decoration: none;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.events-filters__chip--filter {
+  min-width: 120px;
+  padding: 0 10px 0 8px;
+  gap: 6px;
+  justify-content: flex-start;
+  background: var(--navy-dark);
+  color: var(--pink);
+  cursor: default;
+}
+
+.events-filters__filter-icon {
+  width: 18px;
+  height: 17px;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+
+.events-filters__chip--all {
+  margin-left: 43px;
+  background: var(--navy-dark);
+  color: var(--pink);
+}
+
+.events-filters__chip--all-active {
+  background: var(--pink);
+  color: var(--navy-dark);
+  box-shadow: 0 4px 2px rgba(0, 0, 0, 0.25);
+}
+
+.events-filters__chip--fav {
+  margin-left: 8px;
+  background: var(--navy-dark);
+  color: var(--pink);
+}
+
+.events-filters__chip--fav-active {
+  background: var(--pink);
+  color: var(--navy-dark);
+  box-shadow: 0 4px 2px rgba(0, 0, 0, 0.25);
+}
+
+.events-list {
+  display: flex;
+  flex-direction: column;
+  padding: 17px 18px calc(var(--footer-h) + 24px);
+  background: var(--ice);
+}
+
+.events-list--empty {
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100dvh - 125px - 45px - var(--footer-h));
+  padding-top: 0;
+  padding-bottom: calc(var(--footer-h) + 24px);
+}
+
+.events-empty {
+  margin: 0;
+  max-width: 320px;
+  font-size: 32px;
+  letter-spacing: -0.352px;
+  line-height: 1;
+  text-align: center;
+  color: rgba(0, 43, 72, 0.5);
+}

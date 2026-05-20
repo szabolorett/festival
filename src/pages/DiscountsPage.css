@@ -1,0 +1,23 @@
+.discounts-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 114px;
+  padding: 20px;
+  background: var(--blue);
+  flex-shrink: 0;
+}
+
+.discounts-header__title {
+  margin: 0;
+  font-size: 50px;
+  letter-spacing: -0.55px;
+  color: var(--ice);
+  text-align: center;
+  line-height: 1;
+}
+
+.discounts-list {
+  padding: 12px 14px calc(var(--footer-h) + 24px);
+  background: var(--blue);
+}

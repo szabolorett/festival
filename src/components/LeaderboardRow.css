@@ -1,0 +1,41 @@
+.leaderboard-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 18px;
+  list-style: none;
+}
+
+.leaderboard-row__avatar {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.leaderboard-row__body {
+  flex: 1;
+  min-width: 0;
+}
+
+.leaderboard-row__name {
+  display: block;
+  font-size: 16px;
+  color: var(--ice);
+  margin-bottom: 8px;
+}
+
+.leaderboard-row__track {
+  height: 15px;
+  border-radius: 10px;
+  background: var(--navy-dark);
+  overflow: hidden;
+  position: relative;
+}
+
+.leaderboard-row__fill {
+  height: 100%;
+  background: var(--ice);
+  border-radius: 0 10px 10px 0;
+}

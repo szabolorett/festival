@@ -1,0 +1,93 @@
+.points-progress-ring {
+  position: relative;
+  width: 342px;
+  height: 342px;
+  flex-shrink: 0;
+}
+
+.points-progress-ring__track {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  pointer-events: none;
+}
+
+.points-progress-ring__svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.points-progress-ring__progress {
+  transition: stroke-dashoffset 0.65s cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+/* Figma Image7 176:1856 — 244×244 */
+.points-progress-ring__pfp {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 244px;
+  height: 244px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  z-index: 2;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.points-progress-ring__pfp:focus-visible {
+  outline: 2px solid var(--pink);
+  outline-offset: 4px;
+  border-radius: 50%;
+}
+
+.points-progress-ring__pfp-frame {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 200px;
+  overflow: hidden;
+}
+
+.points-progress-ring__pfp-img {
+  position: absolute;
+  left: 0;
+  top: -27.4%;
+  width: 99.99%;
+  height: 152.05%;
+  max-width: none;
+  display: block;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+.points-progress-ring__pfp-overlay {
+  position: absolute;
+  inset: 0;
+  border-radius: 200px;
+  background: var(--blue);
+  pointer-events: none;
+}
+
+.points-progress-ring__pfp-id {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -0.55px;
+  color: var(--pink);
+  pointer-events: none;
+}

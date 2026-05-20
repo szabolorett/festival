@@ -1,0 +1,122 @@
+/* Figma scan the bin 43:442 — card tile 197:2287 */
+.scan-bin-page {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 0;
+  background: var(--blue);
+}
+
+.scan-bin-page__header.page-header {
+  position: relative;
+  min-height: 122px;
+  background: var(--navy);
+  padding: 0 20px 24px;
+  align-items: flex-end;
+}
+
+.scan-bin-page__header .page-header__title {
+  color: var(--ice);
+  letter-spacing: -0.55px;
+}
+
+.scan-bin-page__header .page-header__info {
+  position: absolute;
+  right: 20px;
+  bottom: 24px;
+}
+
+.scan-bin-page__scroll {
+  flex: 1;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  padding: 23px 20px 200px;
+}
+
+.bin-grid-wrap {
+  position: relative;
+  width: 100%;
+  max-width: 389px;
+  margin: 0 auto;
+}
+
+.bin-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 185px);
+  column-gap: 20px;
+  row-gap: 21px;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Figma 197:2287 — 185×176 pink “?” card */
+.bin-grid__cell {
+  width: 185px;
+  height: 176px;
+  border-radius: 10px;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.bin-grid__card {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.bin-camera-rail {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: calc(var(--footer-h) + 45px);
+  width: 100%;
+  max-width: var(--app-width);
+  height: 99px;
+  pointer-events: none;
+  z-index: 15;
+}
+
+.bin-camera {
+  position: absolute;
+  left: calc((100% - 99px) / 2);
+  top: 0;
+  width: 99px;
+  height: 99px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+.bin-camera__bg,
+.bin-camera__icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+}
+
+.bin-camera:focus-visible {
+  outline: 2px solid var(--pink);
+  outline-offset: 4px;
+  border-radius: 50%;
+}
+
+.bin-camera__bg {
+  display: block;
+  width: 99px;
+  height: 99px;
+}
+
+/* Camera icon centered in 99px circle */
+.bin-camera__icon {
+  left: 25.67px;
+  top: 30px;
+  width: 47.67px;
+  height: 39px;
+  display: block;
+  object-fit: contain;
+}

@@ -1,0 +1,104 @@
+/* Figma footer 85:811 — 87px bar, 65px slots, 57px bin-hunt icon */
+.app-footer {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: var(--app-width);
+  height: var(--footer-h);
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 11px 8px;
+  overflow: hidden;
+  z-index: 20;
+}
+
+.app-footer--pink {
+  background: var(--pink);
+}
+
+.app-footer--navy {
+  background: var(--navy-dark);
+}
+
+.app-footer__slot {
+  flex: 0 0 65px;
+  width: 65px;
+  height: 65px;
+  border-radius: 10px;
+  border: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  cursor: pointer;
+  background: var(--navy-dark);
+}
+
+.app-footer--pink .app-footer__slot {
+  background: var(--navy-dark);
+}
+
+.app-footer--navy .app-footer__slot {
+  background: var(--ice);
+}
+
+.app-footer__slot--active {
+  background: var(--ice);
+}
+
+.app-footer--navy .app-footer__slot--active {
+  background: var(--blue);
+}
+
+.app-footer--pink .app-footer__slot--ice {
+  background: var(--ice);
+}
+
+.app-footer--pink.app-footer--inverted-active .app-footer__slot {
+  background: var(--ice);
+}
+
+.app-footer--pink.app-footer--inverted-active .app-footer__slot--active {
+  background: var(--navy-dark);
+}
+
+.app-footer--pink.app-footer--inverted-active .app-footer__slot--logo {
+  background: var(--ice);
+}
+
+.app-footer--pink.app-footer--active-blue .app-footer__slot--active {
+  background: var(--blue);
+}
+
+.app-footer__icon {
+  display: block;
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
+.app-footer__slot--scan .app-footer__icon {
+  width: 57px;
+  height: 57px;
+}
+
+.app-footer__logo {
+  display: block;
+  width: 52px;
+  height: 52px;
+  object-fit: contain;
+}
+
+/* Main page — center home button stands out from navy side tabs */
+.app-footer--highlight-center.app-footer--pink .app-footer__slot--logo {
+  background: var(--blue);
+}
+
+.app-footer--highlight-center.app-footer--pink .app-footer__slot--logo.app-footer__slot--active {
+  background: var(--cyan);
+  box-shadow: 0 4px 10px rgba(0, 43, 71, 0.35);
+}

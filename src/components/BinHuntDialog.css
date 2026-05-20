@@ -1,0 +1,90 @@
+/* Figma 213:3588 — basic dialog on bin hunt */
+.bin-hunt-dialog {
+  position: absolute;
+  top: 62px;
+  left: 39px;
+  z-index: 25;
+  width: 312px;
+  max-width: calc(100% - 39px);
+  pointer-events: none;
+}
+
+.bin-hunt-dialog__panel {
+  pointer-events: auto;
+  background: var(--ice);
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 43, 72, 0.18);
+}
+
+.bin-hunt-dialog__content {
+  padding: 24px 24px 0;
+}
+
+.bin-hunt-dialog__title {
+  margin: 0 0 16px;
+  font-family: var(--font-body);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  color: var(--navy-dark);
+}
+
+.bin-hunt-dialog__body {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.bin-hunt-dialog__lead {
+  margin: 0 0 16px;
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+  color: var(--blue);
+}
+
+.bin-hunt-dialog__body p {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+  color: var(--blue);
+}
+
+.bin-hunt-dialog__actions {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 24px;
+}
+
+.bin-hunt-dialog__cta {
+  border: none;
+  background: transparent;
+  padding: 10px 16px;
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.1px;
+  color: var(--pink);
+  cursor: pointer;
+  border-radius: 100px;
+}
+
+.bin-hunt-dialog__cta:hover {
+  background: rgba(255, 150, 199, 0.12);
+}
+
+.bin-hunt-dialog__cta:active {
+  transform: scale(0.98);
+}
+
+.bin-hunt-dialog__cta:focus-visible {
+  outline: 2px solid var(--pink);
+  outline-offset: 2px;
+}
