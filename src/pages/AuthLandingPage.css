@@ -1,39 +1,111 @@
+/* Figma welcome 43:476 — 430×932 (inside .app-frame--welcome) */
 .auth-landing {
-  min-height: 100dvh;
-  max-width: var(--app-width);
-  margin: 0 auto;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
   background: var(--ice);
-  padding: 30px 26px 48px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+}
+
+.auth-landing__logo-wrap {
+  position: absolute;
+  top: 52px;
+  left: 74px;
+  width: var(--brand-logo-width);
+  height: var(--brand-logo-height);
+  z-index: 1;
 }
 
 .auth-landing__logo {
-  width: min(65vw, 234px);
-  margin-bottom: 80px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: contain;
 }
 
 .auth-landing__title {
-  margin: 0 0 8px;
+  position: absolute;
+  top: 417px;
+  left: 214.5px;
+  transform: translate(-50%, -100%);
+  margin: 0;
+  width: 377px;
+  height: 58px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
   font-size: 50px;
-  color: var(--navy-dark);
+  letter-spacing: -0.55px;
+  line-height: 1;
+  color: var(--navy);
   text-align: center;
 }
 
 .auth-landing__subtitle {
-  margin: 0 0 72px;
+  position: absolute;
+  top: 451.5px;
+  left: 214.5px;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  width: 247px;
+  height: 29px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 25px;
-  color: var(--navy-dark);
+  letter-spacing: -0.275px;
+  line-height: 1;
+  color: var(--navy);
   text-align: center;
 }
 
 .auth-landing__btn {
-  margin-bottom: 0;
+  position: absolute;
+  left: 26px;
+  width: 377px;
+  height: 79px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 12px;
+  background: var(--pink);
+  color: var(--navy);
+  font-size: 25px;
+  letter-spacing: -0.275px;
+  line-height: 1;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: var(--shadow-btn);
+}
+
+.auth-landing__btn--signup {
+  top: 570px;
+}
+
+.auth-landing__btn--login {
+  top: 725px;
+}
+
+.auth-landing__btn:hover {
+  filter: brightness(1.04);
 }
 
 .auth-landing__or {
-  margin: 32px 0;
+  position: absolute;
+  top: 687px;
+  left: 215px;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  width: 232px;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 25px;
-  color: var(--navy-dark);
+  letter-spacing: -0.275px;
+  line-height: 1;
+  color: var(--navy);
+  text-align: center;
 }

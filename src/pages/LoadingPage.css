@@ -20,8 +20,9 @@
 .loading-page__logo {
   position: absolute;
   left: 50%;
-  width: var(--loading-logo-width);
-  height: auto;
+  width: var(--brand-logo-width);
+  height: var(--brand-logo-height);
+  object-fit: contain;
   transform: translateX(-50%);
   top: var(--loading-logo-top-center);
   transition: top 1.1s cubic-bezier(0.33, 1, 0.68, 1);
@@ -60,7 +61,7 @@
   }
 
   .loading-page__logo {
-    top: calc(50% - 133px);
+    top: calc(50% - var(--brand-logo-half-height));
   }
 
   .loading-page--risen .loading-page__logo {

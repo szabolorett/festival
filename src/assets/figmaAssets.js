@@ -2,7 +2,7 @@
 export const ASSETS = {
   logo: 'https://www.figma.com/api/mcp/asset/c7410dc8-36dc-4830-87c6-bc6db4c71938',
   logoRaised: 'https://www.figma.com/api/mcp/asset/8036597a-4d9b-455b-a377-9ae8c924415d',
-  logoWelcome: 'https://www.figma.com/api/mcp/asset/f0302bdc-5223-4245-adf5-e81220f37185',
+  logoWelcome: 'https://www.figma.com/api/mcp/asset/c0f7ee4a-bb00-4195-8e82-d4a5a0ee0379',
   logoSmall: 'https://www.figma.com/api/mcp/asset/01294554-fa75-4561-a070-953021982015',
   pointsRing: 'https://www.figma.com/api/mcp/asset/09ee4ab5-f95b-4bdd-9d22-68ddefb44bdc',
   pointsPinkHalf: 'https://www.figma.com/api/mcp/asset/b52c4892-994d-4b0c-b4c1-a7e2da0e7534',

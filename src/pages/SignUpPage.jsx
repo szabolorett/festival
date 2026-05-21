@@ -7,7 +7,13 @@ export default function SignUpPage() {
 
   return (
     <div className="signup-page">
-      <img src={ASSETS.signUpLogo} alt="BLÅ SOL" className="signup-page__logo" />
+      <img
+        src={ASSETS.signUpLogo}
+        alt="BLÅ SOL"
+        className="signup-page__logo"
+        width={101.49}
+        height={96}
+      />
 
       <h1 className="signup-page__title font-display">SIGN UP</h1>
 
