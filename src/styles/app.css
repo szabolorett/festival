@@ -41,23 +41,6 @@ body {
   box-shadow: 0 0 24px rgba(0, 0, 0, 0.08);
 }
 
-.app-viewport:has(.scan-bin-page) {
-  background: var(--blue);
-}
-
-.app-viewport:has(.scan-bin-page) .app-frame {
-  height: var(--app-height);
-  min-height: var(--app-height);
-  max-height: var(--app-height);
-}
-
-.app-scroll--scan-bin {
-  flex: none;
-  height: var(--app-height);
-  overflow: hidden;
-  padding-bottom: 0;
-}
-
 .app-frame {
   width: 100%;
   max-width: var(--app-width);

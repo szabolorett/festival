@@ -1,42 +1,24 @@
-/* Figma scan the bin 43:442 — 430×932 */
+/* Figma scan the bin 43:442 — card tile 197:2287 */
 .scan-bin-page {
   position: relative;
-  width: var(--app-width);
-  height: var(--app-height);
-  min-height: var(--app-height);
-  max-height: var(--app-height);
-  margin: 0 auto;
-  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 0;
   background: var(--blue);
-  flex-shrink: 0;
 }
 
 .scan-bin-page__header.page-header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 2;
-  height: 122px;
+  position: relative;
   min-height: 122px;
-  margin: 0;
   background: var(--navy);
   padding: 0 20px 24px;
-  display: block;
+  align-items: flex-end;
 }
 
 .scan-bin-page__header .page-header__title {
-  position: absolute;
-  left: 50%;
-  bottom: 24px;
-  transform: translateX(-50%);
-  width: 383px;
-  margin: 0;
   color: var(--ice);
-  font-size: 50px;
   letter-spacing: -0.55px;
-  line-height: 1;
-  text-align: center;
 }
 
 .scan-bin-page__header .page-header__info {
@@ -46,20 +28,17 @@
 }
 
 .scan-bin-page__scroll {
-  position: absolute;
-  top: 145px;
-  left: 20px;
-  width: 389px;
-  bottom: var(--footer-h);
+  flex: 1;
   overflow-y: auto;
-  overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
-  padding: 0 0 120px;
+  padding: 23px 20px 200px;
 }
 
 .bin-grid-wrap {
   position: relative;
-  width: 389px;
+  width: 100%;
+  max-width: 389px;
+  margin: 0 auto;
 }
 
 .bin-grid {
@@ -67,7 +46,8 @@
   grid-template-columns: repeat(2, 185px);
   column-gap: 20px;
   row-gap: 21px;
-  width: 389px;
+  justify-content: center;
+  width: 100%;
 }
 
 /* Figma 197:2287 — 185×176 pink “?” card */
@@ -86,19 +66,22 @@
   object-fit: fill;
 }
 
-/* Figma camera button — left 165px, top 701px */
 .bin-camera-rail {
-  position: absolute;
-  left: 165px;
-  top: 701px;
-  width: 99px;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: calc(var(--footer-h) + 45px);
+  width: 100%;
+  max-width: var(--app-width);
   height: 99px;
   pointer-events: none;
   z-index: 15;
 }
 
 .bin-camera {
-  position: relative;
+  position: absolute;
+  left: calc((100% - 99px) / 2);
+  top: 0;
   width: 99px;
   height: 99px;
   padding: 0;
@@ -128,6 +111,7 @@
   height: 99px;
 }
 
+/* Camera icon centered in 99px circle */
 .bin-camera__icon {
   left: 25.67px;
   top: 30px;

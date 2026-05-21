@@ -58,13 +58,7 @@ export default function ScanBinPage() {
   }
 
   return (
-    <AppShell
-      bg="blue"
-      footerTone="navy"
-      footerActive="blue"
-      activeTab="scan"
-      scrollClassName="app-scroll--scan-bin"
-    >
+    <AppShell bg="blue" footerTone="navy" footerActive="blue" activeTab="scan">
       <div className="scan-bin-page">
         <PageHeader
           className="scan-bin-page__header"
