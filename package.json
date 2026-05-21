@@ -1,9 +1,9 @@
 {
   "name": "festival",
   "private": true,
+  "homepage": "https://szabolorett.github.io/festival/",
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://szabolorett.github.io/festival/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
