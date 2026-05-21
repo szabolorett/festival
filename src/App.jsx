@@ -1,4 +1,4 @@
-import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
+import { HashRouter as Router, Navigate, Route, Routes } from 'react-router-dom'
 import { UserPointsProvider } from './context/UserPointsContext'
 import LoadingPage from './pages/LoadingPage'
 import AuthLandingPage from './pages/AuthLandingPage'
@@ -16,7 +16,7 @@ export default function App() {
   return (
     <div className="app-viewport">
       <UserPointsProvider>
-        <BrowserRouter>
+        <Router>
           <Routes>
           <Route path="/" element={<LoadingPage />} />
           <Route path="/auth" element={<AuthLandingPage />} />
@@ -31,7 +31,7 @@ export default function App() {
           <Route path="/profile" element={<ProfilePage />} />
           <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
-        </BrowserRouter>
+        </Router>
       </UserPointsProvider>
     </div>
   )
